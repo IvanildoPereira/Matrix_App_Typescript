@@ -1,0 +1,57 @@
+div.modal_details{
+    position: relative;
+    width: 600px;
+    background-color: #fff;
+    border: #000 1px solid;
+    border-radius: 5px;
+}
+
+div.modal_details div.header{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: #000 1px solid;
+}
+
+div.modal_details div.header h2{
+    font-size: 20px;
+    color: #fff;
+}
+
+div.modal_details div.header button{
+    background-color: inherit;
+    border: none;
+}
+
+div.modal_details div.header svg{
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+div.modal_details div.content{
+    width: 430px;
+    margin: 20px auto;
+}
+
+div.modal_details div.content p{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+    div.modal_details{
+        width: 340px;
+    }
+
+    div.modal_details div.content{
+        width: 80%;
+    }
+
+    div.add_todo input{
+        width: 70%;
+    }
+}

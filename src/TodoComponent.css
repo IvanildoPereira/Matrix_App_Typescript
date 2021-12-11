@@ -1,0 +1,79 @@
+div.add_todo input{
+    width: 75%;
+    height: 30px;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+div.add_todo button{
+    flex: 1;
+    cursor: pointer;
+    border: #000 1px solid;
+    color: #fff;
+    height: 30px;
+}
+
+div.add_todo{
+    display: flex;
+    margin: 20px 0 10px 0;
+}
+
+div.check_completed{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div.check_completed input[type = "checkbox"]{
+    margin-right: 5px;
+}
+
+div.check_completed span{
+    font-size: 12px;
+}
+
+div.todo_container{
+    background-color: #E8E8E8;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+div.todo_container div.todo_item{
+    display: flex;
+    text-align: left;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* div.todo_container div.todo_item + div.todo_item{
+    margin-top: 8px;
+}  */
+
+div.todo_container div.todo_item{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+
+div.todo_container div.hide_todo{
+    display: none;
+}
+
+div.todo_container div.todo_item button, 
+div.todo_container div.todo_item button svg{
+    font-size: 18px;
+    height: 18px;
+    margin-left: 5px;
+}
+
+div.todo_container div.todo_item button svg:hover{
+    cursor: pointer;
+    color: red;
+}
