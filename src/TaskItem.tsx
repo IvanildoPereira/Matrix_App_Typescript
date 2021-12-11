@@ -88,7 +88,7 @@ const TaskItem = ({ weekId, priorityId, dragging, handleDragEnter, handletDragSt
                             {task.due && <div className = "due_date"><span>{moment(task.due).utcOffset('+0100').format("DD/MM")}</span></div>}
                         </div>
                     {task.description &&
-                        <TooltipTaskDescription description = {task.description} priorityId = {priorityId}/>
+                        <TooltipTaskDescription taskId={task.id} description = {task.description} priorityId = {priorityId}/>
                     }
                 </div>
             )

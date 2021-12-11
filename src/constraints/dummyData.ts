@@ -14,10 +14,10 @@ export const weeks: StagedDay[] = [
 
 // Priorities
 export const priorities: Priority[] = [
-    new Priority(1, "do", "#89CF00"),
-    new Priority(2, "important", "#2E87F6"),
-    new Priority(3, "free time", "#FFA700"),
-    new Priority(4, "forget", "#DE0000")
+    new Priority(1, "Do", "#89CF00"),
+    new Priority(2, "Schedule", "#2E87F6"),
+    new Priority(3, "Delegate", "#FFA700"),
+    new Priority(4, "Delete", "#DE0000")
 ];
 
 // Categories

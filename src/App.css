@@ -26,8 +26,7 @@
     padding: 15px;
     height: 180px;
     color: #fff;
-    max-width: 200px;
-    min-width: 200px;
+    width: 185px;
   }
 
   p{
@@ -94,9 +93,29 @@
   display: none;
 }
 
+@media screen and (max-width: 1200px){
+  .week{
+    grid-template-columns: 2fr;
+    grid-template-columns:  repeat(auto-fit, minmax(380px, 1fr));
+    
+  }
+
+  .priority_grid div.card_priority{
+    width: 170px;
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  .week{
+    grid-template-columns: 2fr;
+    grid-template-columns:  repeat(auto-fit, minmax(50%, 2fr));
+    
+  }
+}
+
 @media screen and (max-width: 768px){
   .week{
-    display: grid;
     grid-template-columns: none;
   }
 
