@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Todo } from './models';
-import { createTodo, deleteTodo, toggleCompleteTodo, draggingTodo } from './store/action-creators/todoActionCreator';
-import { State } from './store/reducers/rootReducer';
+import { Todo } from '../../../../models';
+import { createTodo, deleteTodo, toggleCompleteTodo, draggingTodo } from '../../../../store/action-creators/todoActionCreator';
+import { State } from '../../../../store/reducers/rootReducer';
 import './TodoComponent.css'
 
 interface TodoComponentProps{

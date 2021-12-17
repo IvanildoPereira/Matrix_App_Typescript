@@ -1,48 +1,55 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { createTask } from './store/action-creators/taskActionCreator';
-import Modal from './Utils/Modal';
+import { updateTask } from '../../../store/action-creators/taskActionCreator';
+import moment from "moment";
+import Modal from '../../../Utils/Modal';
 import './ModalTask.css';
-import { Task } from './models';
-import { priorities, weeks, categories } from './constraints/dummyData'
+import { Task } from '../../../models';
+import { priorities, weeks, categories } from '../../../constraints/dummyData'
 
 interface ModalTaskProps{
+    task: Task,
     isOpen: boolean,
     onClose: () => void
 }
 
-const ModalTask = ({isOpen, onClose}: ModalTaskProps) =>{
+const ModalTaskEdit = ({task, isOpen, onClose}: ModalTaskProps) =>{
     const dispatch = useDispatch();
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [categorySelected, setCategorySelected] = useState(1);
     const [weekDaySelected, setWeekDaySelected] = useState(1);
     const [prioritySelected, setPrioritySelected] = useState(1);
-    const [ dueDate, setDueDate ] = useState<Date | null>(null)
+    const [ dueDate, setDueDate ] = useState<Date | null>(null);
+
+    useEffect(()=>{
+      setTitle(task.title);
+      setDescription(task.description);
+      setCategorySelected(task.categoryId)
+      setWeekDaySelected(task.weekId);
+      setPrioritySelected(task.priorityId);
+      setDueDate(task.due)     
+    }, [task])
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) =>{
-        e.preventDefault();     
-        const newTask = new Task(
-          weekDaySelected,
-          prioritySelected,
-          categorySelected,
+        e.preventDefault();
+        
+        const updatedTask: Task = {
+          id: task.id,
+          weekId: weekDaySelected,
+          priorityId: prioritySelected,
+          categoryId: categorySelected,
           title,
           description,
-          dueDate
-        )
+          due: dueDate,
+          isCompleted: task.isCompleted,
+          isArchived: task.isArchived
+        }
 
-        dispatch(createTask(newTask));
+        dispatch(updateTask(updatedTask));
 
-        onClose();
-
-        setTitle("");
-        setDescription("");
-        setDueDate(null)
-        setCategorySelected(1);
-        setWeekDaySelected(1);
-        setPrioritySelected(1);
+        onClose()
     }
-
 
     const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) =>{
       setCategorySelected(parseInt(e.target.value))
@@ -72,11 +79,11 @@ const ModalTask = ({isOpen, onClose}: ModalTaskProps) =>{
             <div className = "form_group">
               <div className = "date_input">
                 <label>Due:</label>
-                <input type="date" onChange = {(e) => setDueDate(e.target.valueAsDate)}/>
+                <input type="date" value = {dueDate ? moment(dueDate).utcOffset('+0100').format("YYYY-MM-DD") : ""} onChange = {(e) => setDueDate(e.target.valueAsDate)}/>
               </div>
               <div className = "category_select">
                 <label>Category:</label>
-                <select onChange = {handleCategoryChange}>
+                <select defaultValue = {categorySelected} onChange = {handleCategoryChange}>
                   {categories.map(category => (
                     <option value = {category.id}>{category.name}</option>
                   ))}
@@ -87,7 +94,7 @@ const ModalTask = ({isOpen, onClose}: ModalTaskProps) =>{
             <div className = "form_group">
               <div className = "select_weekday">
                 <label>Week Day:</label>
-                <select onChange = {handleSelectWeekChange}>
+                <select defaultValue = {weekDaySelected} onChange = {handleSelectWeekChange}>
                   {weeks.map(week => (
                     <option value = {week.id}>{week.day}</option>
                   ))}
@@ -95,19 +102,19 @@ const ModalTask = ({isOpen, onClose}: ModalTaskProps) =>{
               </div>
               <div className = "select_priority">
                 <label>Priority:</label>
-                <select onChange = {handleSelectPriorityChange}>
-                  {priorities.map(priority => (
+                <select defaultValue = {prioritySelected} onChange = {handleSelectPriorityChange}>
+                 {priorities.map(priority => (
                     <option value = {priority.id}>{priority.type}</option>
                   ))}
                 </select>  
               </div>
             </div>        
 
-            <button type = "submit">Save</button>
+            <button type = "submit">Update</button>
           </form>
         </div>
       </Modal>
     )
 }
 
-export default ModalTask;
+export default ModalTaskEdit;

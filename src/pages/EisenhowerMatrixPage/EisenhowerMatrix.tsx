@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { weeks } from "./constraints/dummyData"
-import ModalTask from "./ModalTask";
-import PriorityGrid from "./PriorityGrid";
+import { weeks } from "../../constraints/dummyData"
+import ModalTask from "./ModalTask/ModalTask";
+import PriorityGrid from "./components/PriorityGrid";
+import './EisenhowerMatrix.css'
 
 type itemDragged = {
     weekId: number, priorityId: number, taskId: string | number

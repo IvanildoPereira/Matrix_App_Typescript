@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { Todo } from "./models/Todo";
-import { State } from './store/reducers/rootReducer';
+import { useSelector } from 'react-redux';
+import { Todo } from "../../../models/Todo";
+import { State } from '../../../store/reducers/rootReducer';
 import "./TooltipTaskDescription.css"
 
 interface TooltipTaskDescriptionProps{

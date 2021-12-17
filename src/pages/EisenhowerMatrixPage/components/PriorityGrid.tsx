@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import { useDispatch } from 'react-redux'
-import { priorities } from "./constraints/dummyData"
+import { priorities } from "../../../constraints/dummyData"
 import PriorityHorizontalLabel from "./PriorityHorizontalLabel";
 import PriorityVerticalLabel from "./PriorityVerticalLabel";
-import { draggingTask } from "./store/action-creators/taskActionCreator";
+import { draggingTask } from "../../../store/action-creators/taskActionCreator";
 import TaskItem from "./TaskItem";
 
 type itemDragged = {

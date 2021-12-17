@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import moment from "moment";
-import { Task } from "./models";
-import { removeSelectedTaskId, setSelectedTaskId, toggleCompleteTask } from './store/action-creators/taskActionCreator';
-import { State } from "./store/reducers/rootReducer"
+import { Task } from "../../../models";
+import { removeSelectedTaskId, setSelectedTaskId, toggleCompleteTask } from '../../../store/action-creators/taskActionCreator';
+import { State } from "../../../store/reducers/rootReducer"
 import TooltipTaskDescription from './TooltipTaskDescription';
-import ModalTaskDetails from "./ModalTaskDetails";
-import { categories } from './constraints/dummyData';
+import ModalTaskDetails from "../ModalTaskDetails/ModalTaskDetails";
+import { categories } from '../../../constraints/dummyData';
 
 type TypeProps = {
     weekId: number,

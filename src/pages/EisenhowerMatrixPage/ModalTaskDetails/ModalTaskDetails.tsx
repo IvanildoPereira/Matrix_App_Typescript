@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Modal from './Utils/Modal'
+import Modal from '../../../Utils/Modal'
 import './ModalTaskDetails.css';
-import { Task } from './models';
-import { State } from './store/reducers/rootReducer';
-import { categories, priorities } from './constraints/dummyData';
-import { toggleArchivedTask } from './store/action-creators/taskActionCreator';
-import ModalTaskEdit from './ModalTaskEdit';
-import TodoComponent from './TodoComponent';
+import { Task } from '../../../models';
+import { State } from '../../../store/reducers/rootReducer';
+import { categories, priorities } from '../../../constraints/dummyData';
+import { toggleArchivedTask } from '../../../store/action-creators/taskActionCreator';
+import ModalTaskEdit from '../ModalTask/ModalTaskEdit';
+import TodoComponent from './components/TodoComponent';
 
 interface ModalTaskDetailsProps{
     isOpen: boolean,

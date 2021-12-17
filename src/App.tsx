@@ -1,6 +1,5 @@
-import React from 'react';
 import './App.css';
-import EisenhowerMatrix from './EisenhowerMatrix';
+import EisenhowerMatrix from './pages/EisenhowerMatrixPage/EisenhowerMatrix';
 
 function App() {
   return (

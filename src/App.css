@@ -1,142 +1,18 @@
-.week{
-    display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(400px, 1fr));
-}
-
-.card{
-    margin-right: 10px;
-    margin-bottom: 30px;
-}
-
-.priority_grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-  }
-  
-  h1{
+h1{
     text-align: center;
     text-transform: uppercase;
     font-size: 23px;
     margin-bottom: 10px;
-  }
+}
   
-  .priority_grid div.card_priority{
-    margin: 5px;
-    border-radius: 5px;
-    padding: 15px;
-    height: 180px;
-    color: #fff;
-    width: 200px;
-  }
 
-  p{
+
+p{
     font-size: 12px;
-  }
+}
   
-  .priority_grid div div.card-item{
-    position: relative;
-    box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-    padding: 6px;
-   
-  }
-  
-  .priority_grid div div.card-item + div.card-item{
-    margin: 10px 0;
-  }
-
-  .priority_grid div div.card-item div.info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .priority_grid div div.card-item div.info div.due_date{
-    background-color: rgb(222, 0, 0);
-    box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.25);
-    padding: 3px 5px;
-    border-radius: 5px;
-    font-size: 10px;
-    color: #fff;
-    margin-left: 2px;
-    
-  }
-
-  .priority_grid div div.card-item div.info svg{
-    font-size: 12;
-    margin-right: 5px;
-  }
-
-  .priority_grid div div.card-item:hover .tooltip{
-    visibility: visible;
-    opacity: 1;
-  }
-
-.btn_add{
-    cursor: pointer;
-    border: none;
-    background: blue;
-    box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.25);
-    color: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 10px;
-    right: 15px;
-    font-size: 30px;
-    font-weight: bold;  
-}
 
 
-.priority_grid div div.card-item.remove_hover .tooltip{
-  display: none;
-}
-
-@media screen and (max-width: 1200px){
-  .week{
-    grid-template-columns: 2fr;
-    grid-template-columns:  repeat(auto-fit, minmax(380px, 1fr));
-    
-  }
-
-  .priority_grid div.card_priority{
-    width: 170px;
-  }
-}
 
 
-@media screen and (max-width: 992px){
-  .week{
-    grid-template-columns: 2fr;
-    grid-template-columns:  repeat(auto-fit, minmax(50%, 2fr));
-    
-  }
-}
 
-@media screen and (max-width: 768px){
-  .week{
-    grid-template-columns: none;
-  }
-
-  .priority_grid div.card_priority{
-    min-width: auto;
-    max-width: auto;
-  }
-
-  .outer{
-    display: none;
-  }
-
-  .text_priority{
-    display: none;
-  }
-
-  .container_mobile_priority{
-    flex: 1;
-  }
-
-  .tooltip{
-    display: none;
-  }
-}
