@@ -39,7 +39,7 @@
 - Drag and drop your todos
 - Move the modal in the viewport
 - Save all datas in the localstorage
-- Feel free to test the other features on the [**Live demo**](https://shopapp2020-75c0b.web.app/).
+- Feel free to test the other features on the [**Live demo**](https://ivanildopereira.github.io/Matrix_App_Typescript/).
 
 ## :rocket: Technologies
 
