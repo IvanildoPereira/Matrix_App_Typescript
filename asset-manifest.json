@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Matrix_App_Typescript/static/css/main.e427e4eb.chunk.css",
+    "main.js": "/Matrix_App_Typescript/static/js/main.5a554609.chunk.js",
+    "main.js.map": "/Matrix_App_Typescript/static/js/main.5a554609.chunk.js.map",
+    "runtime-main.js": "/Matrix_App_Typescript/static/js/runtime-main.05f64e76.js",
+    "runtime-main.js.map": "/Matrix_App_Typescript/static/js/runtime-main.05f64e76.js.map",
+    "static/js/2.c75764ed.chunk.js": "/Matrix_App_Typescript/static/js/2.c75764ed.chunk.js",
+    "static/js/2.c75764ed.chunk.js.map": "/Matrix_App_Typescript/static/js/2.c75764ed.chunk.js.map",
+    "index.html": "/Matrix_App_Typescript/index.html",
+    "static/css/main.e427e4eb.chunk.css.map": "/Matrix_App_Typescript/static/css/main.e427e4eb.chunk.css.map",
+    "static/js/2.c75764ed.chunk.js.LICENSE.txt": "/Matrix_App_Typescript/static/js/2.c75764ed.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.05f64e76.js",
+    "static/js/2.c75764ed.chunk.js",
+    "static/css/main.e427e4eb.chunk.css",
+    "static/js/main.5a554609.chunk.js"
+  ]
+}
