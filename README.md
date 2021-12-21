@@ -17,12 +17,12 @@
 </p>
 
 <p align="center">
-  <img alt="Demo gif" src="./github/matrixappdemo.gif" style="max-width:100%;">  
+  <img alt="Demo gif" src="./github/matrixapp.png" style="max-width:100%;">  
 </p>
 
 <br>
 <p align="center">
-  <a href="https://shopapp2020-75c0b.web.app/" target = "_blank" rel="nofollow">
+  <a href="https://ivanildopereira.github.io/Matrix_App_Typescript/" target = "_blank" rel="nofollow">
     <img alt="Live Demo on Firebase Hosting" src="./github/livedemo_button.png" style="max-width:100%;">
   </a>
   <a href="https://www.figma.com/file/6e3bkGOjDfmVehJI9Py4zJ/Matriz-To-do?node-id=0%3A1" target = "_blank" rel="nofollow">
