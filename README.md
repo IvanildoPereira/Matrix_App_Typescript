@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img alt="ShopApp" src="./github/logo_matrix.png" />
+    <br>
+    <span style = "color: #3178c6; font-weight:bold">Eisenhower's</span> <br><span style = "color: #daa520; font-weight:bold">Matrix APP</span><br>
+    Project Portfolio 
+</h1>
+<h4 align="center">
+  A project based in The Eisenhower Matrix, also referred to as Urgent-Important Matrix, helps you decide on and prioritize tasks by urgency and importance, sorting out less urgent and important tasks which you should either delegate or not do at all.
+</h4>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<p align="center">
+  <a href="#computer-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="Demo gif" src="./github/matrixappdemo.gif" style="max-width:100%;">  
+</p>
 
-### `npm start`
+<br>
+<p align="center">
+  <a href="https://shopapp2020-75c0b.web.app/" target = "_blank" rel="nofollow">
+    <img alt="Live Demo on Firebase Hosting" src="./github/livedemo_button.png" style="max-width:100%;">
+  </a>
+  <a href="https://www.figma.com/file/6e3bkGOjDfmVehJI9Py4zJ/Matriz-To-do?node-id=0%3A1" target = "_blank" rel="nofollow">
+    <img alt="Design of the project on figma" src="./github/figma_button.png" style="max-width:100%;">
+  </a>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## :computer: Features
 
-### `npm test`
+- Create Tasks
+- Drag and drop your task
+- Create Todos
+- Drag and drop your todos
+- Move the modal in the viewport
+- Save all datas in the localstorage
+- Feel free to test the other features on the [**Live demo**](https://shopapp2020-75c0b.web.app/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :rocket: Technologies
 
-### `npm run build`
+This project was developed to improve my knowledges as a FrontEnd Developer and to build this Project I used this technologies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**FrontEnd**
+- [ReactJS](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :information_source: How To Use
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js][nodejs] + [NPM][npm] installed on your computer.
 
-### `npm run eject`
+From your command line:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# Clone this repository
+$ git clone https://github.com/IvanildoPereira/Matrix_App_Typescript.git
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Go into the repository
+$ cd Matrix_App_Typescript
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Install dependencies
+$ npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Run the app
+$ npm start
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## :memo: License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is under the MIT license.
+
+---
+
+Made with ♥ by Ivanildo Pereira :wave: [Get in touch!](https://www.linkedin.com/in/ivanildopconceicao/)
+
+[nodejs]: https://nodejs.org/
+[npm]: https://www.npmjs.com/
